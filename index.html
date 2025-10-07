@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Video Page</title>
+    <title>CreativBox Bot</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,6 +14,12 @@
             justify-content: center;
             min-height: 100vh;
             margin: 0;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
         }
         h1 {
             color: #333;
@@ -27,13 +33,25 @@
     </style>
 </head>
 <body>
-    <h1>My Video</h1>
+    <h1>Files</h1>
 
-    <!-- Replace 'videos/myvideo.mp4' with your video path -->
-    <video width="640" height="360" controls>
-        <source src="videos/myvideo.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+    <a href="files/.env" download>
+        <button>Download .env</button>
+    </a>
 
+    <a href="files/index.js" download>
+        <button>Download index.js</button>
+    </a>
+
+    <p>
+        1. Download Files<br>
+        2. Install Node.js (For Windows) → https://nodejs.org/en/download<br>
+        3. Path to your Downloaded File (where you did put it) Example: C:\Users\Administrator\Downloads<br>
+        4. Open Command Prompt<br>
+        5. Type "npm install discord.js dotenv" to install Discord.js and Dotenv<br>
+        6. Type "cd C:\Users\Administrator\Downloads"<br>
+        7. Type "node index.js"<br>
+        8. Your Discord Bot will Run Now.
+    </p>
 </body>
 </html>
